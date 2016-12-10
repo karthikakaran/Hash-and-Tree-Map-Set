@@ -1,0 +1,37 @@
+
+CS 4V95.003, CS 5V81.012. Implementation of data structures and algorithms
+Fall 2016
+Optional Project 5
+Mon, Oct 10, 2016
+
+Version 1.0: Initial description.
+Version 1.1: Added running times (8:00 AM, Tue, Oct 11).
+
+Due: 11:59 PM, Tue, Oct 18.
+
+Solve as many problems as you wish:
+
+Use Java's TreeSet or TreeMap to solve the following problems.
+
+1. Given an array A of integers, and an integer X, find how many pairs of
+   elements of A sum to X:
+   static int howMany(int[] A, int X) { // RT = O(nlogn).
+     // How many indexes i,j (with i != j) are there with A[i] + A[j] = X?
+     // A is not sorted, and may contain duplicate elements
+     // If A = {3,3,4,5,3,5} then howMany(A,8) returns 6
+   }
+
+2. Given an array A, return an array B that has those elements of A that
+   occur exactly once, in the same order in which they appear in A:
+   static<T extends Comparable<? super T>> T[] exactlyOnce(T[] A) { // RT = O(nlogn).
+     // Ex: A = {6,3,4,5,3,5}.  exactlyOnce(A) returns {6,4}
+   }
+
+3. Given an array A of integers, find the length of a longest streak of
+   consecutive integers that occur in A (not necessarily contiguously):
+   static int longestStreak(int[] A) { // RT = O(nlogn).
+     // Ex: A = {1,7,9,4,1,7,4,8,7,1}.  longestStreak(A) return 3,
+     //    corresponding to the streak {7,8,9} of consecutive integers
+     //    that occur somewhere in A.
+   }
+
